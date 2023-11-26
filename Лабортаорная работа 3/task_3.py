@@ -3,11 +3,8 @@ def count_letters(text):
     letter_count = {}
     for char in text:
         if char.isalpha():
-            if char.isupper():
-                char = char.lower()
-                letter_count[char] = letter_count.get(char, 0) + 1
-            else:
-                letter_count[char] = letter_count.get(char, 0) + 1
+            char = char.lower()
+            letter_count[char] = letter_count.get(char, 0) + 1
     return letter_count
 
 def calculate_frequency(letter_count):
